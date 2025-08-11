@@ -1,13 +1,11 @@
-
-
 header {
-  background-color: #282c34;
+  background-color: #3b4559;
   min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(20px + 2vmin);
+  font-size: calc(40px + 4vmin);
   color: white;
   font-weight: bolder;
 }
@@ -17,19 +15,22 @@ nav {
 nav a {
 margin-right: 20px; 
   text-decoration: none; 
-  
   padding: 15px;
-  height: 2px;
+  height: 3px;
   justify-content: flex-end;
   text-align: left;
   color:white;
     justify-content: flex-start;
-
 }
-footer{
-  background-color: #282c34;
-  color: aliceblue;
+.food-message {
+  display: flex;
   justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  height: 20vh; 
+  font-size: 30px; 
+  font-family: 'Pacifico', cursive; 
+  color: #ff5722;
   text-align: center;
 }
 img{
@@ -42,4 +43,17 @@ nav {
 }
 p{
   text-align: left;
+}
+nav {
+  background-color: #c94679;
+  text-align: right;
+  padding: 10px;
+}
+
+nav a {
+  margin-right: 20px;
+  text-decoration: underline; 
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
 }
