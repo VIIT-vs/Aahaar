@@ -1,0 +1,30 @@
+
+import React from 'react';
+import '../App.css';
+import { FiHome, FiInfo, FiLogIn, FiUserPlus } from 'react-icons/fi';
+
+function Home() {
+  return (
+    <div>
+      <header>
+       
+        Aahaar</header>
+       
+      <nav>
+        <a href="Home"><FiHome style={{ verticalAlign: 'middle', marginRight: '6px' }} />Home</a>
+        <a href="About"><FiInfo style={{ verticalAlign: 'middle', marginRight: '6px' }} />About</a>
+        <a href="SignIn"><FiLogIn style={{ verticalAlign: 'middle', marginRight: '6px' }} />Sign in</a>
+        <a href="SignUp"><FiUserPlus style={{ verticalAlign: 'middle', marginRight: '6px' }} />Sign Up</a>
+      </nav>
+      <div className="food-message">
+        "Your leftovers can be someone’s lifeline." <span className="emoji" role="img" aria-label="food emojis"></span>
+      </div>
+       <img src='/food2.jpeg' alt='Delicious Food' width={1000} height={400} /> 
+      <footer>
+          © 2025 The Aahaar Foundation | Nourishing Lives, Reducing Waste
+      </footer>
+    </div>
+  );
+}
+
+export default Home;
