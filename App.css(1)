@@ -1,0 +1,286 @@
+  /* header {
+  background-color: #3b4559;
+  min-height: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(40px + 4vmin);
+  color: white;
+  font-weight: bolder;
+}
+nav {
+  background-color: #64aee2;
+}
+nav a {
+margin-right: 20px; 
+  text-decoration: none; 
+  padding: 15px;
+  height: 3px;
+  justify-content: flex-end;
+  text-align: left;
+  color:white;
+    justify-content: flex-start;
+}
+.food-message {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 80px;
+  height: 20vh; 
+  font-size: 30px; 
+  font-family: 'Pacifico'; 
+  color: black;
+  text-align: center;
+}
+img{
+ display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+nav {
+  text-align: right;
+}
+p{
+  text-align: left;
+}
+nav {
+  background-color: #c94679;
+  text-align: right;
+  padding: 10px;
+}
+
+nav a {
+  margin-right: 20px;
+  text-decoration: underline; 
+  color: white;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+   footer {
+  background-color: #3b4559;
+  min-height: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(5px + 1vmin);
+  color: rgb(240, 240, 245);
+  padding: 10px;
+  
+  font-size: 0.9rem;
+  color: #999;
+  margin-top: 40px;
+} */
+
+
+/* Header styling */
+/* Professional and clean styling */
+
+/* Import Roboto font - add in your index.html:
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+*/
+
+/* Professional, calm & elegant styling */
+
+/* Font: Roboto (import in index.html)
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+*/
+
+body {
+  margin: 0;
+  background-color: #fafafa; /* very light gray */
+  font-family: 'Roboto', sans-serif;
+  color: #333;
+ background: url('C:\Users\SANSKRUTI\Desktop\Aahaar\aahaar-app-1\public\food5.jpg')center/cover no-repeat ;
+
+
+}
+
+/* Header */
+header {
+  background-color: #2f2f2f;  /* charcoal dark gray */
+  min-height: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: #f5f0e6; /* soft off-white */
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  box-shadow: 0 3px 8px rgba(4, 42, 74, 0.25);
+
+  
+
+
+}
+
+/* Navigation bar */
+nav {
+  background-color: #bb6b54; /* muted terracotta */
+  padding: 12px 40px;
+  display: flex;
+  justify-content: flex-end;
+  box-shadow: inset 0 -2px 0 #9e563e;
+}
+
+/* Navigation links */
+nav a {
+  color: #f5f0e6; /* same soft off-white */
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  margin-left: 25px;
+  padding-bottom: 4px;
+  border-bottom: 3px solid transparent;
+  transition: border-color 0.3s ease, color 0.3s ease;
+  cursor: pointer;
+}
+
+nav a:hover,
+nav a:focus {
+  border-bottom: 3px solid #d9b382; /* warm light gold */
+  color: #d9b382;
+  outline: none;
+}
+
+/* Food message */
+.food-message {
+  margin: 60px auto 40px;
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #9e161c; /* medium dark gray */
+  text-align: center;
+  max-width: 600px;
+  
+}
+
+
+
+
+/* Image styling */
+img {
+  display: block;
+  max-width: 90%;
+  height: auto;
+  margin: 0 auto 60px;
+  border-radius: 12px;
+  box-shadow: 0 10px 20px rgba(75, 50, 40, 0.15); /* soft warm shadow */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+   
+   
+}
+
+img:hover {
+  transform: scale(1.04);
+  box-shadow: 0 15px 30px rgba(75, 50, 40, 0.3);
+}
+
+/* Footer styling */
+footer {
+  background-color: #2f2f2f; /* charcoal dark gray */
+  color: #bfb6a9; /* soft warm gray */
+  text-align: center;
+  padding: 18px 0;
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.05);
+  user-select: none;
+}
+
+
+
+
+
+
+.signin-container {
+  height: 100vh;
+  display: flex;
+  
+  justify-content: center; 
+  align-items: center; 
+  background: url('/public/donation.png')
+}
+
+
+.signin-box {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 40px;
+  border-radius: 10px;
+  width: 400px;
+  height: 300px;
+  text-align: center;
+  box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.header .text {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.header .underline {
+  width: 50px;
+  height: 3px;
+  background: #4CAF50;
+  margin: 8px auto;
+}
+
+.input {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  background: #f5f5f5;
+  padding: 8px;
+  border-radius: 5px;
+}
+
+.input img {
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+}
+
+.input input {
+  border: none;
+  background: none;
+  outline: none;
+  width: 100%;
+  font-size: 14px;
+}
+
+.forgot-password {
+  margin-top: 15px;
+  font-size: 14px;
+}
+
+.forgot-password span {
+  color: #4CAF50;
+  cursor: pointer;
+}
+
+.submit-btn {
+  margin-top: 20px;
+  padding: 10px;
+  width: 100%;
+  background: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.submit-btn:hover {
+  background: #45a049;
+}
+
+
+       
+
+
+
+
+ 
