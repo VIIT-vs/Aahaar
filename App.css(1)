@@ -79,7 +79,7 @@ button:hover {
   color: white;
 }
 
-.signup {
+.DonorPage {
   display: flex;
   justify-content: center; 
   align-items: center;     
@@ -152,6 +152,221 @@ legend{
   font-size:x-large;
 }
 .p{
-  font-size: 0.8cm;
+  font-size:0.8cm;
 }
 
+.signin-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #64aee2, #c94376);
+  font-family: "Poppins", sans-serif;
+}
+
+.signin-box {
+  background: white;
+  padding: 3rem 2rem;
+  border-radius: 20px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+.signin-title {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #3b4559;
+  margin-bottom: 1.5rem;
+  position: relative;
+}
+
+.signin-title::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #c94679;
+  margin: 0.5rem auto 0;
+  border-radius: 5px;
+}
+
+.input-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 0.6rem 1rem;
+  background: #fafafa;
+  transition: 0.3s ease-in-out;
+}
+
+.input-group:hover {
+  border-color: #64aee2;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  flex: 1;
+  padding: 0.6rem;
+  font-size: 1rem;
+  background: transparent;
+}
+
+.icon {
+  width: 22px;
+  height: 22px;
+  margin-right: 10px;
+}
+
+.forgot-password {
+  font-size: 0.9rem;
+  margin: 1rem 0;
+  color: #555;
+}
+
+.forgot-password span {
+  color: #c94679;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.forgot-password span:hover {
+  text-decoration: underline;
+}
+
+.submit-btn {
+  background: linear-gradient(135deg, #64aee2, #c94679);
+  color: white;
+  border: none;
+  padding: 0.8rem 1rem;
+  font-size: 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+  transition: 0.3s ease-in-out;
+  font-weight: bold;
+}
+
+.submit-btn:hover {
+  background: linear-gradient(135deg, #3b4559, #c94679);
+  transform: scale(1.05);
+}
+
+/* Main container */
+.signup {
+
+  display: flex;
+  justify-content: center; 
+  align-items: center;     
+  min-height: 100vh;       
+ 
+  background-size: cover;
+  background-position: center;
+  padding: 2rem;
+  
+
+
+
+
+
+  max-width: 1800px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #f8f9fa;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+   
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-image: url("C:\Users\USER\Desktop\Aahaar\aahaar-1\public\img4.jpg");
+}
+
+
+.signup .Form {
+  display: flex;
+  flex-direction: column;
+
+}
+
+
+.signup .Field {
+  border: 1px solid #ccc;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+/* Legend styling */
+.signup .Field legend {
+  font-weight: bold;
+  padding: 0 10px;
+}
+
+
+.signup label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+  font-size: 14px;
+  color: #000000;
+}
+
+
+
+.signup input[type="text"],
+.signup input[type="email"],
+.signup input[type="password"],
+.signup input[type="tel"],
+.signup select,
+.signup textarea {
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 16px;       
+  line-height: 1.5;      
+  font-family: inherit;   
+  box-sizing: border-box; 
+}
+
+/* Textarea styling */
+.signup textarea {
+  resize: vertical;
+  min-height: 60px;
+  font-size: 16px;       /* ensure same as input */
+  line-height: 1.5;
+}
+
+.signup button {
+  padding: 12px 20px;
+  background-color: #28a745;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.signup button:hover {
+  background-color: #218838;
+}
+
+
+.signup h2 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #080808;
+}
+
+
+@media screen and (max-width: 600px) {
+  .signup {
+    margin: 20px;
+    padding: 20px;
+  }
+}
