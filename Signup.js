@@ -1,51 +1,103 @@
-import React from 'react'
+import React, { useState } from "react";
+
 
 function Signup() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    password: "",
+    contact: "",
+    role: "", // donor or receiver
+  });
+
+  const handleChange = (e) => {
+    setFormData({ ...formData, [e.target.name]: e.target.value });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const res = await fetch("http://localhost:5000/api/signup", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+      alert(data.message);
+    } catch (err) {
+      console.error(err);
+      alert("Signup failed");
+    }
+  };
+
   return (
-   
-    <div className='signup'>
-    
-     
-      <form className='Form'>
-        <fieldset classname= 'Field'>
-        <legend>Donar Information </legend>
-          <label >Donar Name<input type='text' placeholder='Please Enter Your Name '></input></label>
-          
-          <p>
-            <label>Menu </label><br />
-          <label>VEG<input type="checkbox" name="Veg" value="VEG"></input></label>
-          <label>NON-VEG<input type="checkbox" name="Non-veg" value="NON-VEG"></input></label>
-          </p>
-          <label>Quantity Of Food</label>
-          <ul Quantity Of Food>
-            <select>
-            <option><li>10 persons</li></option>
-            <option><li>10-100 persons</li></option>
-            <option><li>100-500</li></option>
-            <option><li>more than 50</li></option>
+    <div className="signup">
+      <h2 className="signup-title">Signup</h2>
+
+      <form className="signup-form" onSubmit={handleSubmit}>
+        <fieldset className="signup-fieldset">
+          <legend className="signup-legend">User Information</legend>
+
+          <label className="signup-label">
+            Full Name
+            <input
+              type="text"
+              name="name"
+              className="signup-input"
+              value={formData.name}
+              onChange={handleChange}
+              required
+            />
+          </label>
+
+          <label className="signup-label">
+            Email
+            <input
+              type="email"
+              name="email"
+              className="signup-input"
+              value={formData.email}
+              onChange={handleChange}
+              required
+            />
+          </label>
+
+          <label className="signup-label">
+            Password
+            <input
+              type="password"
+              name="password"
+              className="signup-input"
+              value={formData.password}
+              onChange={handleChange}
+              required
+            />
+          </label>
+
+          <label className="signup-label">
+            I am a:
+            <select
+              name="role"
+              className="signup-select"
+              value={formData.role}
+              onChange={handleChange}
+              required
+            >
+              <option value="">-- Select --</option>
+              <option value="donor">Donor</option>
+              <option value="receiver">Receiver</option>
             </select>
-          </ul>
-          <label>  Menu Description<input type='Textarea' placeholder='Enter your menu'></input></label>
-          <p>
-            <label>date<input type='date'></input></label>
-          </p>
-           <p>
-            <label>Choose Time <input type='time' required></input></label>
-          </p>
-          <p>
-            <label>PickUp Where<input type='location'placeholder='Enter Your Location' required></input></label>
-          </p>
-          <p>
-          <label>all above food is fresh</label><br />
-           <input type="radio" name="donation" value="agree" />  Agree
-           <input type="radio" name="donation" value="disagree" /> disAgree
-          </p>
-           <button type="submit">Submit</button>
-       </fieldset> 
+          </label>
+
+          <button type="submit" className="signup-button">
+            Signup
+          </button>
+        </fieldset>
       </form>
     </div>
-   
-  )
+  );
 }
-export default Signup;
 
+export default Signup;
