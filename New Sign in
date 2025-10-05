@@ -1,0 +1,62 @@
+// import React from "react";
+// import "../App.css"; 
+// import emailIcon from "C:\Users\USER\Desktop\Aahaar\aahaar-1\public\email_logo.png";
+// import passwordIcon from "C:\Users\USER\Desktop\Aahaar\aahaar-1\public\password_logo.png";
+
+// function Signin() {
+//   return (
+//     <div className="signin-container">
+//       <div className="signin-box">
+//         <h2 className="signin-title">Sign In</h2>
+
+//         <div className="input-group">
+//           <img src="C:\Users\USER\Desktop\Aahaar\aahaar-1\public\email_logo.png" alt="Email" className="icon" />
+//           <input type="email" placeholder="Enter your email" />
+//         </div>
+
+//         <div className="input-group">
+//           <img src="C:\Users\USER\Desktop\Aahaar\aahaar-1\public\password_logo.png" alt="Password" className="icon" />
+//           <input type="password" placeholder="Enter your password" />
+//         </div>
+
+//         <div className="forgot-password">
+//           Forgot Password? <span>Click here</span>
+//         </div>
+
+//         <button className="submit-btn">Sign In</button>
+//       </div>
+//     </div>
+//   );
+// }
+
+// export default Signin;
+import React from "react";
+import "../App.css";
+
+function Signin() {
+  return (
+    <div className="signin-container">
+      <div className="signin-box">
+        <h2 className="signin-title">Sign In</h2>
+
+        <div className="input-group">
+          <img src="/email_logo.png" alt="Email" className="icon" />
+          <input type="email" placeholder="Enter your email" />
+        </div>
+
+        <div className="input-group">
+          <img src="/password_logo.png" alt="Password" className="icon" />
+          <input type="password" placeholder="Enter your password" />
+        </div>
+
+        <div className="forgot-password">
+          Forgot Password? <span>Click here</span>
+        </div>
+
+        <button className="submit-btn">Sign In</button>
+      </div>
+    </div>
+  );
+}
+
+export default Signin;
